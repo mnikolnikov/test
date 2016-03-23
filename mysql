@@ -1,5 +1,4 @@
-sudo /etc/init.d/mysgl restart
-mysql -uroot -e "create database ask;"
-mysql -uroot -e "create user 'ask@localhost' identified by 'pass';"
-mysql -uroot -e "grant all privileges on * . * to 'ask@localhost';"
-mysql -uroot -e "flush privileges;"
+create database ask;
+create user 'ask@localhost' identified by 'pass';
+grant all privileges on * . * to 'ask@localhost';
+flush privileges;
